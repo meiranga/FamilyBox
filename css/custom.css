@@ -1,0 +1,63 @@
+.jumbotron {
+     background-image: url("../img/kids1.jpg");
+    margin-bottom: 0;
+    height:500px;
+    background-size: cover;
+    background-position: center;
+    filter:sepia(100%);   
+}
+
+.buttonHeader {
+    
+    position:relative;
+    bottom:315px;
+    border-radius:99px;
+
+}
+
+.navBottomFix {
+    
+    margin-bottom: 0;
+}
+  
+.navbar-inverse .navbar-nav li a:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.fontTitle {
+   font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+.bottomSpacing {
+    margin-bottom: 20px;
+    
+}
+
+
+.container .hovereffect .img-responsive {
+   max-height: 250px;
+    width:100%;
+       
+}
+
+.well{
+    background: #635d4e;
+    color: antiquewhite;
+    height: 320px;
+    
+}
+article-style {
+    height:6010px;
+    max-height: 600px;
+    line-height: inherit;
+    
+}
+
+.about{font-family: monospace;
+}
+
+#navmain {
+    text-align: right;
+}
