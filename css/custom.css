@@ -58,6 +58,11 @@ article-style {
 .about{font-family: monospace;
 }
 
-#navmain {
-    text-align: right;
+.box{
+    height: 180px;
+    width:  171px;
+    border: 1px solid black;
+    background: #F5F5F5;
+    
 }
+
