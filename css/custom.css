@@ -8,10 +8,11 @@
 }
 
 .buttonHeader {
-    
+    opacity: 0.4;
     position:relative;
     bottom:315px;
     border-radius:99px;
+    color:white;
 
 }
 
@@ -59,11 +60,19 @@ article-style {
 }
 
 .box{
-    height: 180px;
-    width:  171px;
-    border: 1px solid black;
-    background: #F5F5F5;
+    box-sizing: border-box;
+    height: 245px;
+    width:  200px;  
+    float:right;
+    text-align: center;
+    outline: 0;
+    font-family: "Comic Sans MS"
     
+    
+}
+
+.box:hover{
+    opacity: 0.4;
 }
 
   .carousel-inner img {
@@ -72,10 +81,94 @@ article-style {
       margin: auto;
       min-height:200px;
       max-height: 600px;
+      
   }
 
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  /* Hide the carousel text when the screen is less than 600 pixels wide 
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; 
+    }*/
+main{
+    width:100%;
+    
+}
+     
+      
+      .clear{clear: both}
+      
+
+      
+      main{
+          width;100%;
+      }
+
+
+.cartoon{
+    height:100%;
+    width:100%; 
+    
+}
+
+#explenation{
+    background:#f9f9f9;
+    height: 300px;
+    outline: 0;
+     font-family: "Comic Sans MS"
+}
+
+
+
+
+/*LOGIN Nav Button
+*/
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-gl{
+    color: #fff;
+    background-color:#d8443c;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
     }
