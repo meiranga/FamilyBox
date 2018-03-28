@@ -1,0 +1,16 @@
+לרשום גיט לפני כל מילה
+cd .. לחזור אחורה
+ls להסתכל על התקייה הנוכחית
+pwd לראות את הנתיב
+cd והשם של התקייה
+
+למשוך קבצים:
+1. להגיע לתיקיית FamilyBox
+2. לכתוב git pull origin master
+3. אם עושה בעיות, לכתוב git pull
+
+להכניס קובץ שעבדת עליו:
+להגיע לתיקייה FamilyBox
+לכתוב: git add fileName.html
+לכתוב: git commit -m "notification"
+לכתוב: git push git
