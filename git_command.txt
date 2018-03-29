@@ -14,3 +14,8 @@ cd והשם של התקייה
 לכתוב: git add fileName.html
 לכתוב: git commit -m "notification"
 לכתוב: git push git
+
+
+לבדוק שינויים 
+git log
+git status

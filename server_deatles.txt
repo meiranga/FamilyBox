@@ -1,0 +1,18 @@
+
+השרת שביקשת מוכן ולהלן פרטיו:
+
+Meiranga.mtacloud.co.il :שם שרת
+
+meiranga :שם משתמש
+
+TxtD8.7zcq4J :סיסמא
+
+https://mtapanel.mtacloud.co.il:2083/ :כתובת ניהול שרת
+
+mtapanel.mtacloud.co.il :FTP ו SSHכתובת גישה ב
+
+:הערות
+
+ Helpdesk@mta.ac.il 03-6803431 : בכל שאלה/בעיה/בקשה ניתן לפנות למרכז התמיכה המחשובי
+
+קוד: familybox2018MTA
