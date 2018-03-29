@@ -95,52 +95,30 @@
 
 <div>
 <div class="container" >
-		<?php echo $_POST["name"]; ?>
-		<?php echo $_POST["familyName"]; ?>
-		<?php echo $_POST["email"]; ?>
-		<?php echo $_POST["Bdate"]; ?>
-		<?php echo $_POST["password"]; ?>
-		<?php echo $_POST["password2"]; ?>
-		<?php echo $_POST["phone"]; ?>
-		<?php echo $_POST["gender"]; ?>
-		
+    <div class="col-md-6" >
+        <div id="logbox"  >
+            <form id="signup" method="post" action="register.php" >
+                <h1>Create an Account</h1>				 
+				<input name="name" type="text" placeholder="Name" required="required" class="input pass"/>
+				<input name="familyName" type="text" placeholder="Last Name" required="required" class="input pass"/>
+				<input name="Bdate" type="date" placeholder="dd/mm/yyyy"required="required" class="input pass"/>
+				<input name="email" type="email" placeholder="Email address" class="input pass"/>
+                <input name="password" id="pass1" type="password" placeholder="Choose a password" required="required" class="input pass"/>
+                <input name="password2" id="pass2" type="password" placeholder="Confirm password" required="required" class="input pass"/>
+				<input name="phone" type="tel" placeholder="phone number" required="required" class="input pass"/>
+				<fieldset> <legend>sex?</legend>
+				<input name="gender" type="radio" value="male" title="male" />Male
+				<input name="gender" type="radio" value="female" title="female"/>Female 
+				</fieldset>
+				<input type="submit" value="Sign me up!" class="inputButton"  onclick="passvalid()"/>
+			
+				
+				<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+            </form>
+        </div>
+    </div>
 	<a href="#" onclick="signOut();">Sign out</a>
-	<?php
-$servername = "localhost:3306";
-$username = "meiranga_gilad";
-$password = "gilad123";
-$dbname = "meiranga_mishtamshim";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-     die("Connection failed: " . $conn->connect_error);
-} 
-
-$sql = "SELECT email, firstname, lastname, password, phone, birthdate, sex FROM parents";
-$result = $conn->query($sql);
-
-
-
-$email=$_POST["email"];
-$firstname=$_POST["name"];
-$lastname=$_POST["familyName"];
-$password=$_POST["password"];
-$phone=$_POST["phone"];
-$birthdate=$_POST["Bdate"];
-$sex=$_POST["gender"];
-
-
-$sql2="INSERT INTO parents (email, firstname, lastname, password, phone, birthdate, sex) VALUES ('".$email."','".$firstname."','".$lastname."','".$password."','".$phone."','".$birthdate."','".$sex."');";
-$sql3="INSERT INTO parents(email, firstname, lastname, password, phone, birthdate, sex) VALUES ('gilad@gmail.com', 'gilad', 'bergmann','123456', '0506667777', '2018-03-07', 'male');";
-$conn->query($sql2);
-$conn->query($sql3);
-$result = $conn->query($sql);
-
-$conn->close();
-?>  
-
 
 </div>
 </div>
@@ -162,6 +140,27 @@ function onSignIn(googleUser) {
       console.log('User signed out.');
     });
   }
+  function passvalid(){
+  var pass1=document.getElementById("pass1").value;
+  var pass2=document.getElementById("pass2").value;
+  var flag=true;
+
+  for (var i=0;i<pass1.length ;i++ )
+  {
+	  if (pass1.charAt(i)!=pass2.charAt(i))
+	  {
+		  flag=false;
+	  }
+  }
+
+  if(flag==false){
+  alert("your password worng please back" + txt.link("register.html"))
+  }
+  else{
+  alert("your password good")
+  }
+  }
+   
 </script>
 
 

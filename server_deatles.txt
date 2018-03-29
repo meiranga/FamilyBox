@@ -16,3 +16,9 @@ mtapanel.mtacloud.co.il :FTP ו SSHכתובת גישה ב
  Helpdesk@mta.ac.il 03-6803431 : בכל שאלה/בעיה/בקשה ניתן לפנות למרכז התמיכה המחשובי
 
 קוד: familybox2018MTA
+
+User: meiranga_gilad
+
+Database: meiranga_mishtamshim
+
+gilad123
