@@ -99,18 +99,19 @@
         <div id="logbox"  >
             <form id="signup" method="post" action="register.php" >
                 <h1>Create an Account</h1>				 
-				<input name="name" type="text" placeholder="Name" required="required" class="input pass"/>
-				<input name="familyName" type="text" placeholder="Last Name" required="required" class="input pass"/>
-				<input name="Bdate" type="date" placeholder="dd/mm/yyyy"required="required" class="input pass"/>
-				<input name="email" type="email" placeholder="Email address" class="input pass"/>
+				<input name="name" id="name" type="text" placeholder="Name" required="required" class="input pass"/>
+				<input name="familyName" id="familyName" type="text" placeholder="Last Name" required="required" class="input pass"/>
+				<input name="Bdate" id="Bdate" type="date" placeholder="dd/mm/yyyy"required="required" class="input pass"/>
+				<input name="email" id="email" type="email" placeholder="Email address" class="input pass"/>
                 <input name="password" id="pass1" type="password" placeholder="Choose a password" required="required" class="input pass"/>
                 <input name="password2" id="pass2" type="password" placeholder="Confirm password" required="required" class="input pass"/>
-				<input name="phone" type="tel" placeholder="phone number" required="required" class="input pass"/>
+				<input name="phone" id="phone" type="tel" placeholder="phone number" required="required" class="input pass"/>
 				<fieldset> <legend>sex?</legend>
-				<input name="gender" type="radio" value="male" title="male" />Male
-				<input name="gender" type="radio" value="female" title="female"/>Female 
+				<input name="gender" id="male" type="radio" value="male" title="male" />Male
+				<input name="gender" id="female" type="radio" value="female" title="female"/>Female 
 				</fieldset>
 				<input type="submit" value="Sign me up!" class="inputButton"  onclick="passvalid()"/>
+			
 			
 				
 				<div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -145,20 +146,26 @@ function onSignIn(googleUser) {
   var pass2=document.getElementById("pass2").value;
   var flag=true;
 
-  for (var i=0;i<pass1.length ;i++ )
-  {
-	  if (pass1.charAt(i)!=pass2.charAt(i))
-	  {
-		  flag=false;
-	  }
-  }
+ if(pass1!=pass2){
+ flag=false;
+ 
+ }
 
   if(flag==false){
-  alert("your password worng please back" + txt.link("register.html"))
+   document.getElementById("name").value="";
+	 document.getElementById("familyName").value="";
+     document.getElementById("Bdate").value="";
+	  document.getElementById("email").value="";
+	 document.getElementById("pass1").value="";
+     document.getElementById("pass2").value="";
+	  document.getElementById("phone").value="";
+	 document.getElementById("male").value="";
+     document.getElementById("female").value="";
+
+    alert("your password is not the same please try again!");
+	window.location.href = ("register.html")
   }
-  else{
-  alert("your password good")
-  }
+
   }
    
 </script>
