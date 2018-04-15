@@ -1,4 +1,13 @@
-<!--OldJaffa.com Tourist site--->
+<?php
+ require_once "google/config.php";
+
+	if (isset($_SESSION['access_token'])) {
+		header('Location: google/index.php');
+		exit();
+	}
+
+	$loginURL = $gClient->createAuthUrl();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -15,18 +24,74 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="css/custom.css" rel="stylesheet">
 
-   
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript">
+	 function validpass(){
+	 var eemail;
+eemail= "<?php echo $_POST['email']; ?>";
+ppassword= "<?php echo $_POST['password']; ?>";
+ <?php $email =$_POST['email'];?>
+  <?php $passwordd =$_POST['password'];?>
+  
+
+
+	if(eemail!=""){
+		 
+    <?php
+$servername = "localhost:3306";
+$username = "meiranga_gilad";
+$password = "gilad123";
+$dbname = "meiranga_mishtamshim";
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+					// Check connection
+					if ($conn->connect_error) {
+						 die("Connection failed: " . $conn->connect_error);
+					} 
+					
+				   $result2 = $conn->query("SELECT password FROM parents where email  = '".$email."'");
+				   $passwordPHP =$result2->fetch_assoc();
+				    				   
+
+	
+	?>
+		var passwordJS ;
+passwordJS = "<?php echo $passwordPHP['password']; ?>";
+if(ppassword==passwordJS){
+	alert("you are login");
+	
+}
+else{
+	alert("your password or email are invalid");
+}
+		
+		
+		
+	}
+
+	 
+ }
+
+	
+	
+	</script>
       
             
 
   </head>
     
-  <body>
-      
+  <body onload="validpass()">
+    
       
       <!--------NAV---------->
       
-      <nav class="clear navbar-default navbar-fixed-top navmain" >
+      <nav class=" navbar-default navbar-fixed-top navmain" >
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header navbar-left "> 
@@ -36,17 +101,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"> FamilyBox </a>
+      <a class="navbar-brand" href="index.php"> FamilyBox </a>
     </div>
 
    
     <div class="collapse navbar-collapse" id="respManu">
       <ul class="nav navbar-nav navbar-left">
-          <li><a href="form.html">Sign Up</a></li>
-          <li><a href="howItWorks.html">How it's works</a></li>
+          <li><a href="register.html">Sign Up</a></li>
+          <li><a href="#">How it's works</a></li>
           <li><a href="#">The team</a></li>         
-          <li><a href="includes/contactUs.html">Contact Us</a></li>
-           
+          <li><a href="#">Contact Us</a></li>
+             <li><a href="#"> <?php echo $_POST['email']; ?></a></li>
           
         <li class="dropdown">
         </li>
@@ -66,22 +131,23 @@
 							<div class="col-md-12">
 								Login via
 								<div class="social-buttons">
-									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-									<a href="#" class="btn btn-gl"><i class="fa fa-google"></i> Google</a>
+									<a href="index.php" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<input type="button" onclick="window.location = '<?php echo $loginURL ?>';"class="btn btn-gl" class="fa fa-google" value="Google" >
+									
 								</div>
                                 or
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+								 <form class="form" role="form" method="post" action="index.php" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+											 <input type="email" id="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
 										</div>
 										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+											 <label class="sr-only"  for="exampleInputPassword2">Password</label>
+											 <input type="password" id="password" name="password"class="form-control" id="exampleInputPassword2" placeholder="Password" required>
                                              <div class="help-block text-right"><a href="">Forget the password ?</a></div>
 										</div>
 										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+											 <button type="submit" class="btn btn-primary btn-block" onclick="checkPassword()">Sign in</button>
 										</div>
 										<div class="checkbox">
 											 <label>
@@ -91,7 +157,7 @@
 								 </form>
 							</div>
 							<div class="bottom text-center">
-								New here ? <a href="#"><b>Join Us</b></a>
+								New here ? <a href="register.html"><b>Join Us</b></a>
 							</div>
 					 </div>
 				</li>
@@ -258,7 +324,7 @@
       
       
     </aside>
-   
+
 
   </body>
 </html>
