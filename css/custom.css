@@ -32,7 +32,9 @@
 
 
 .bottomSpacing {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    
     
 }
 
@@ -56,13 +58,14 @@ article-style {
     
 }
 
-.about{font-family: monospace;
+.about{
+    font-family: monospace;
 }
 
 .box{
     box-sizing: border-box;
-    height: 245px;
-    width:  200px;  
+    height: 150px;
+    max-width:  200px;  
     float:right;
     text-align: center;
     outline: 0;
@@ -78,6 +81,7 @@ article-style {
   .carousel-inner img {
       width: 100%; /* Set width to 100% */
       filter:sepia(100%);  
+      filter:sepia(100%);  
       margin: auto;
       min-height:200px;
       max-height: 600px;
@@ -89,34 +93,77 @@ article-style {
     .carousel-caption {
       display: none; 
     }*/
-main{
-    width:100%;
+@media(max-width:600px)
+{
+    #titleFB{
+       display: none;
+               
+    }
+    
+    .box{
+        width:100%%;
+        text-align: center;
+    }
+    
+     .ex{
+        width:50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #myCarousel{
+        margin-top: 50px;
+        
+    }
+    
     
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+    and (max-device-width : 1024px){
+         .ex{
+        width:80%;
+        text-align: center;
+        margin: 0 auto;
+    
+    
+    }   
+}
+@media only screen(min-device-width : 1024px){
+      width:80%;
+        text-align: center;
+        margin: 0 auto;  
+        
+}
      
+.clear{clear: both}
       
-      .clear{clear: both}
-      
-
-      
-      main{
-          width;100%;
-      }
-
 
 .cartoon{
-    height:100%;
-    width:100%; 
+    height:90%;
+    width:90%; 
     
 }
 
 #explenation{
     background:#f9f9f9;
-    height: 300px;
+    height: 200px;
     outline: 0;
-     font-family: "Comic Sans MS"
+     font-family: "Comic Sans MS";
+    border: 1px dotted green;
+    text-align: center;
+    
 }
 
+#titleFB {
+    box-sizing: border-box;
+    position: absolute;
+    color:darkgray;
+    text-align: center;
+    bottom:450px;
+    left:250px;
+    font-family: Nosifer;
+}
 
 
 
@@ -163,12 +210,33 @@ main{
     color: #fff;
     background-color:#59b5fa;
 }
+
+.navmain{
+    width:100%;
+    
+}
 @media(max-width:768px){
     #login-dp{
         background-color: inherit;
         color: #fff;
+       
     }
     #login-dp .bottom{
         background-color: inherit;
         border-top:0 none;
+        
+        
     }
+    
+ 
+    body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+    
+}
+    
+   
+   

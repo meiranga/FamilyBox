@@ -1,0 +1,225 @@
+*{font-family: Lemon;}
+
+aside {
+    float: left;
+    width: 25%;
+    height:650px;
+    background: #FF5733;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: black 1px dotted;
+ 
+       
+}
+
+main{
+    float:left;
+    width: 75%;
+    height:650px;
+    /*background-color:antiquewhite;*/
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px; 
+    background-image: url(../img/family4.jpg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+    
+}
+h1 {
+    font-family: URW Chancery L;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.clear {clear:both}
+
+.picParent {
+
+    width:150px;
+    height:150px;
+    border: 8px solid #ff6f4f;
+   
+ 
+
+}
+
+.picChild {
+
+    width:150px;
+    height:140px;
+    border: 1px solid #5bc0de;
+    border-radius: 20%;
+    
+
+}
+
+h2{
+    
+    text-align: center;
+    font-family: monospace; 
+    color:floralwhite;
+}
+
+.list-style ul{
+    list-style-type: none;
+    text-align: center;
+      
+   
+}
+
+.list-style li{
+   padding-right: 15%; 
+    padding-bottom: 15px;
+  
+}
+
+.list-style li a {
+    color: aliceblue;
+    font-size: 18px;
+    font-family: monospace; 
+    
+}
+
+.list-style li a:hover{
+   text-decoration: none;
+   font-size: 24px;
+   color: antiquewhite;
+   font-weight: bold;
+}
+
+.list-style li a:active{
+   text-decoration: none;
+   font-size: 25px;
+   color:aqua;
+    
+}
+
+.list-style li a:visited{
+    list-style-type: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: monospace; 
+}
+
+.list-style{
+    
+   
+}
+.boxInfo{
+    box-sizing: border-box;
+    border: 2px solid gray;
+    height: 150px;
+    width: 80%;
+    margin: 0 auto;  
+    color: aliceblue;
+    font-family:Book Antiqua;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    -pie-background:  rgba(0, 0, 0, 0.8);
+    behavior: url(PIE.htc);
+  
+}
+
+.boxTasks{
+    box-sizing: border-box;
+    border: 2px solid gray;
+    height: 450px;
+    width: 80%;
+    margin: 0 auto;
+    color: aliceblue;
+    font-family:Book Antiqua;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    -pie-background:  rgba(0, 0, 0, 0.8);
+    behavior: url(PIE.htc);
+  
+}
+
+
+
+#fname{
+    color: #2195c6;
+    font-weight: bold;
+}
+
+
+
+
+.box h2{
+    font-family: Book Antiqua;
+    font-size: 40px;
+}
+
+
+
+.btn-info{
+    height:9%;
+}
+
+form{
+    margin: 0px auto;
+    width: 50%
+}
+
+form p{
+    text-align: left;
+    color: #5bc0de;
+    margin-left:0px;
+    font-family: Lemon  ;
+}
+
+form p input{
+    float:right;
+    
+}
+
+input[type=text] {
+    
+    box-sizing: border-box;
+    border: none;
+    background-color: #5bc0de;
+    color: white;
+    font-size: 10px;
+}
+
+input[type=select] {
+    
+    box-sizing: border-box;
+    border: none;
+    background-color: #5bc0de;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .picChild{
+        width:50px;
+        height:50px;
+    }
+    btn-info{
+       width:50%; 
+    }
+}
+
+
+
+
+
+
+/*
+.bg-family{
+  background-image: url(../img/family5.jpg); 
+  width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    
+}*/
