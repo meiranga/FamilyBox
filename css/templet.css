@@ -38,23 +38,6 @@ main{
     
 }
 
-.clear {clear:both}
-
-.picParent {
-
-    width:150px;
-    height:150px;
-    border: 8px solid #444e59;
-}
-
-
-#greeting{
-    
-    text-align: center;
-    font-family: Merienda One; 
-    color:floralwhite;
-    font-size: 15px;
-}
 
 
 
@@ -73,82 +56,18 @@ main{
     border-radius: 15px;
   
 }
-.box h2{
-    margin-top: 0;
-    font-family: Lemon;
-}
-
-#fname{
-    color: #556270;
-    font-weight: bold;
-    font-family: Merienda One;
-}
 
 
-.childs ul{
-    list-style-type: none;
-    opacity: 0.9;
-    padding: 0;
-    
-    
-}
-
-.childs ul li{
-    display: inline-block;
-}
-
-/*
-.childs img{
-   
-    height: 200px;
-    
-
-}
-*/
 
 .box h2{
     font-family: Book Antiqua;
     font-size: 40px;
+     margin-top: 0;
+    font-family: Lemon;
 }
 
 
-
-
-
-.containerPIC {
-  position: relative;
-  width:80%;
-  max-width: 300px;
-  border: 5px solid ;
-}
-
-.imagePIC {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlayPIC {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.containerPIC:hover .overlayPIC {
-  opacity: 1;
-}
-
-
-
+/*Side bar menu ASIDE*/
 .list-group{
     text-align: center;
    
@@ -183,26 +102,21 @@ main{
 }
 
 
-.thumbnail {
-    min-height: 300px; 
-    vertical-align: top;
+.picParent {
 
-}
-
-.thumbnail a img{
-    margin-right: auto;
-    margin-left: auto;
-    height: 240px;
-    width: 200px;
+    width:150px;
+    height:150px;
+    border: 8px solid #444e59;
 }
 
 
-
-
-
-
-
-
+#greeting{
+    
+    text-align: center;
+    font-family: Merienda One; 
+    color:floralwhite;
+    font-size: 15px;
+}
 
 
 
@@ -227,9 +141,6 @@ main{
     border: 6px solid #444e59;
 }
     
-    .stat{
-        font-size: 10px;
-    }
     
     .list-group a{
  font-size: 15px;  
