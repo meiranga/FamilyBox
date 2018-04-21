@@ -17,7 +17,12 @@ $dbname = "meiranga_mishtamshim";
 					   $email=$_SESSION['email'];
 				   $result2 = $conn->query("SELECT firstname FROM parents where email  = '".$email."'");
 				   $firstNamePHP =$result2->fetch_assoc();
+				   $_SESSION['firstname']=$firstNamePHP['firstname'];
 				  
+				
+				  
+				    $result2 = $conn->query("SELECT lastname FROM parents where email  = '".$email."'");
+				   $lastNamePHP =$result2->fetch_assoc();
 
 	
 	?>
@@ -50,21 +55,21 @@ $dbname = "meiranga_mishtamshim";
     
       <aside>
     <h1 id="logo">FamilyBox</h1>
-    <h2 id="greeting">Welcome back <?php echo $_SESSION['email'];?>!</h2>
+    <h2 id="greeting">Welcome back <?php echo $firstNamePHP['firstname'];?>!</h2>
      <div class="row">
     <div class="col-12">   
-    <img src="https://pbs.twimg.com/profile_images/938554387609239552/5QHzQMog_400x400.jpg" class="img-circle center-block picParent"></div></div> <br>
+    <img src="<?php echo $_SESSION['picture']?>" class="img-circle center-block picParent"></div></div> <br>
      
 
         
        <div class="list-group center-block">
   <a href="#" class="list-group-item ">HOME </a> 
         <a href="#" class="list-group-item active">My familiy</a>
-       <a href="addFamilyMember.html" class="list-group-item">Add Family Member</a>
+       <a href="addFamilyMember.php" class="list-group-item">Add Family Member</a>
      <a href="#" class="list-group-item">Family store</a>
         <a href="#" class="list-group-item">Report</a>
        <a href="#" class="list-group-item">Setting</a>
-       <a href="#" class="list-group-item">Logout</a>
+       <a href="../../google/logout.php" class="list-group-item">Logout</a>
         
            
     </div>  
@@ -78,7 +83,7 @@ $dbname = "meiranga_mishtamshim";
     <div class="box">
 
         <hr>
-    <h2>The <span id="fname">Galis</span> familia</h2>
+    <h2>The <span id="fname"><?php echo $lastNamePHP['lastname'];?></span> familia</h2>
             
         <div class="childs">
             <ul>

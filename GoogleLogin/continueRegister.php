@@ -53,13 +53,19 @@ $conn->close();
 
 	
 
-	
+	<script type="text/javascript">
+function passMe(){
+	window.location.href = ("../includes/parents/home-parent.php");
+}
+
+</script>
+
 	
 	
 	
 	
 </head>
-<body >
+<body onload="passMe()">
  
 <div class="container" style="margin-top: 100px">
 	<div class="row">

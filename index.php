@@ -70,6 +70,23 @@ $dbname = "meiranga_mishtamshim";
 passwordJS = "<?php echo $passwordPHP['password']; ?>";
 if(ppassword==passwordJS){
 	<?php $_SESSION['email']=$email;?>
+	   <?php
+$servername = "localhost:3306";
+$username = "meiranga_gilad";
+$password = "gilad123";
+$dbname = "meiranga_mishtamshim";
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+					// Check connection
+					if ($conn->connect_error) {
+						 die("Connection failed: " . $conn->connect_error);
+					} 
+					  $result2 = $conn->query("SELECT picture FROM parents where email  = '".$email."'");
+				   $imagePHP =$result2->fetch_assoc();
+				
+				  $_SESSION['picture']="../../file/images/".$imagePHP['picture']."";
+					?>
 	window.location.href = ("includes/parents/home-parent.php");
 	
 }
