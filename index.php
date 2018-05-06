@@ -170,20 +170,7 @@ else{
   </div><!-- /.container-fluid -->
 </nav>
       
-      
-      
-      <!--------HEADER-------      
-      <header class="bottomSpacing">
-         <div class="jumbotron">
-          <div class="container text-center fontTitle">
-                      <h1>FamilyBox</h1>
-                      <p>הורים נותנים מטלות והילדים מקבלים מתנות</p>
-                  </div>
-                </div>
-            <div class="container text-center">
-                <p><a class="btn btn-primary btn-lg btn-success  buttonHeader" href="form.html" role="button-success">!הירשם עכשיו</a></p></div>
-      </header>
-      -->
+
       
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
       
