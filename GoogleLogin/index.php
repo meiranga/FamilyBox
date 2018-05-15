@@ -45,8 +45,7 @@ var phoneJS ;
 phoneJS = "<?php echo $phonePHP['phone']; ?>";
 function validDetails(){
 if(phoneJS==""){
-	alert(phoneJS);
-	alert("to continue you have to complete your details");
+	
     window.location.href = ("continueRegister.html");	
 }
 else{
@@ -79,8 +78,6 @@ phoness = "<?php echo $_SESSION['phone']; ?>";
 badatess = "<?php echo $_SESSION['birthdate']; ?>";
 
 
-		
-		alert(phoness+badatess);
 		window.location.href = ("users.php");	
 	
 }

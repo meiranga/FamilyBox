@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FamilyBox</title>
+      
+      
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Miltonian" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lemon" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
+   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lemon" />
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../../css/addFamilyMemberCSS.css" rel="stylesheet">
+
+            
+
+  </head>
+    
+  <body>
+      
+      <!-------------MAIN------------------->
+    
+      <aside>
+    <h1 id="logo">FamilyBox</h1>
+    <h2 id="greeting">Welcome back Meiran!</h2>
+     <div class="row">
+    <div class="col-12">   
+    <img src="https://pbs.twimg.com/profile_images/938554387609239552/5QHzQMog_400x400.jpg" class="img-circle center-block picParent"></div></div> <br>
+     
+
+        
+       <div class="list-group center-block">
+  <a href="#" class="list-group-item ">HOME </a> 
+        <a href="home-parent.html" class="list-group-item">My familiy</a>
+       <a href="#" class="list-group-item active">Add Family Member</a>
+     <a href="#" class="list-group-item">Family store</a>
+        <a href="#" class="list-group-item">Report</a>
+       <a href="#" class="list-group-item">Setting</a>
+       <a href="#" class="list-group-item">Logout</a>
+        
+           
+    </div>  
+          
+    </aside>
+      
+    <!-----Main----->
+    <main>
+
+        
+    <div class="box">
+
+     <h3 class="title">ADD FAMILY MEMBER</h3><hr><br>
+      <form action="#" method="post" id="addMember">
+        <fieldset>
+          <legend>
+            
+            <p>User permession:<select name="permession" required>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="parent">Parent</option>
+            <option value="Child">Child</option>
+                </select></p>
+
+
+                            
+                <p>First name: <input type="text" name="name" id="name" placeholder="Johnny" required></p>
+              
+          
+                <p>Email<input type="email" name="email" placeholder="john@gmail.com" required></p>
+              
+                <p>Password<input type="password" name="password" placeholder="********" required></p>
+              
+                 <p>Confirm password<input type="password" name="password2" placeholder="********" required></p> 
+              
+              <p>Date Of Birth:<input type="date" name="bday" required></p>
+              
+                <p>Mobile<input type="tel" name="phone" placeholder="050-0000000"></p> 
+              
+              
+              
+              
+                <p class="genderMain">Gender:
+                
+                <label id="gender">
+                  <input type="radio" name="gender" value="male" required>
+                  <img src="../../img/genderBoy.svg" class="genderImg">
+                </label>
+              
+               <label >
+                  <input type="radio" name="gender" value="female" required>
+                  <img src="../../img/genderGirl.png" class="genderImg">
+                </label></p>
+               
+             <p>Picture:<input type="file" name="pic" accept="image/*"></p>
+               
+            
+            
+          </legend>
+    
+          </fieldset>
+          
+          <button type="submit" form="addMember" value="Submit" class="btn btn-lg button center-block" onclick="passvalid()" >Add Family Member</button>
+    
+        </form>
+            
+        
+        
+        
+        
+        
+       </div>
+         
+      
+    </main>
+      
+     
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<script>
+
+  function passvalid(){
+  var pass1=document.getElementById("pass1").value;
+  var pass2=document.getElementById("pass2").value;
+  var flag=true;
+
+ if(pass1!=pass2){
+ flag=false;
+ 
+ }
+
+  if(flag==false){
+   document.getElementById("name").value="";
+	 document.getElementById("familyName").value="";
+     document.getElementById("Bdate").value="";
+	  document.getElementById("email").value="";
+	 document.getElementById("pass1").value="";
+     document.getElementById("pass2").value="";
+	  document.getElementById("phone").value="";
+	 document.getElementById("male").value="";
+     document.getElementById("female").value="";
+
+    alert("your password is not the same please try again!");
+	window.location.href = ("rregister.php")
+  }
+
+  }
+
+   
+      </script>
+
+  </body>
+</html>

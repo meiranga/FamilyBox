@@ -12,26 +12,6 @@
 		header('Location: login.php');
 		exit();
 	}
-
-	$oAuth = new Google_Service_Oauth2($gClient);
-	$userData = $oAuth->userinfo_v2_me->get();
-
-	$_SESSION['id'] = $userData['id'];
-	$_SESSION['email'] = $userData['email'];
-	$_SESSION['gender'] = $userData['gender'];
-	$_SESSION['picture'] = $userData['picture'];
-	$_SESSION['familyName'] = $userData['familyName'];
-	$_SESSION['givenName'] = $userData['givenName'];
-	
-		$email=$_SESSION["email"];
-	$sex=$_SESSION["gender"];
-	$picture=$_SESSION["picture"];
-	$lastname=$_SESSION["familyName"];
-	$firstname=$_SESSION["givenName"];
-	
-				  
-
-	
 	$servername = "localhost:3306";
 $username = "meiranga_gilad";
 $password = "gilad123";
@@ -43,6 +23,30 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 } 
+	$oAuth = new Google_Service_Oauth2($gClient);
+	$userData = $oAuth->userinfo_v2_me->get();
+	foreach($conn->query('SELECT COUNT(iid) FROM parents') as $row) {
+				   }
+
+	$_SESSION['id'] = $userData['id'];
+	$_SESSION['email'] = $userData['email'];
+	$_SESSION['gender'] = $userData['gender'];
+	$_SESSION['picture'] = $userData['picture'];
+	$_SESSION['familyName'] = $userData['familyName'];
+	$_SESSION['givenName'] = $userData['givenName'];
+	$_SESSION['iid']=$row['COUNT(iid)'];
+	
+		$email=$_SESSION["email"];
+	$sex=$_SESSION["gender"];
+	$picture=$_SESSION["picture"];
+	$lastname=$_SESSION["familyName"];
+	$firstname=$_SESSION["givenName"];
+	$iid=$row['COUNT(iid)'];
+	
+				  
+
+	
+
 
 	   $x=$_SESSION['email'];
 				   $result2 = $conn->query("SELECT phone FROM parents where email  = '".$x."'");
@@ -57,7 +61,7 @@ $result = $conn->query($sql);
    
 
 	
-	$sql2="INSERT INTO parents (email, firstname, lastname, password, phone, birthdate, sex, picture) VALUES ('".$email."','".$firstname."','".$lastname."','".$password."','".$phone."','".$birthdate."','".$sex."','".$picture."');";
+	$sql2="INSERT INTO parents (email, firstname, lastname, password, phone, birthdate, sex, picture, iid) VALUES ('".$email."','".$firstname."','".$lastname."','".$password."','".$phone."','".$birthdate."','".$sex."','".$picture."','".$iid."');";
 $sql3="INSERT INTO parents(email, firstname, lastname, password, phone, birthdate, sex, picture) VALUES ('gilad@gmail.com', 'gilad', 'bergmann','123456', '0506667777', '2018-03-07', 'male');";
 $conn->query($sql2);
 $conn->query($sql3);

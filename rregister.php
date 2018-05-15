@@ -26,6 +26,25 @@
 	<link rel="stylesheet" href="css/style.css">
 	 <link href="css/custom.css" rel="stylesheet">
     <title>FamilyBox</title>
+	<style type="text/css">
+			#dropZone {
+				border: 3px dashed #0088cc;
+				padding: 50px;
+				width: 500px;
+				margin-top: 20px;
+			}
+
+			#files {
+				border: 1px dotted #0088cc;
+				padding: 20px;
+				width: 200px;
+				display: none;
+			}
+
+            #error {
+                color: red;
+            }
+		</style>
   </head>
 <body>
 
@@ -120,8 +139,14 @@
 				<input name="gender" id="male" type="radio" value="male" title="male" />Male
 				<input name="gender" id="female" type="radio" value="female" title="female"/>Female 
 				</fieldset>
-					<input type="hidden" name="size" value="1000000">
-  	                <input type="file" name="image">
+					<div id="dropZone">
+				<h1>Drag & Drop Files...</h1>
+				<input type="file" id="fileupload" name="attachments[]" multiple>
+				
+			</div>
+			<h1 id="error"></h1><br><br>
+			<h1 id="progress"></h1><br><br>
+			<div id="files"></div>
 				<input type="submit" value="Sign me up!" class="inputButton"  onclick="passvalid()"name="upload" />
 			
 			
@@ -160,7 +185,7 @@
      document.getElementById("female").value="";
 
     alert("your password is not the same please try again!");
-	window.location.href = ("register.html")
+	window.location.href = ("rregister.php")
   }
 
   }
@@ -168,6 +193,47 @@
    
 </script>
 
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="nis/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+		<script src="nis/js/jquery.iframe-transport.js" type="text/javascript"></script>
+		<script src="nis/js/jquery.fileupload.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+               var files = $("#files");
+
+               $("#fileupload").fileupload({
+                   url: 'register.php',
+                   dropZone: '#dropZone',
+                   dataType: 'json',
+                   autoUpload: false
+               }).on('fileuploadadd', function (e, data) {
+                   var fileTypeAllowed = /.\.(gif|jpg|png|jpeg)$/i;
+                   var fileName = data.originalFiles[0]['name'];
+                   var fileSize = data.originalFiles[0]['size'];
+
+                   if (!fileTypeAllowed.test(fileName))
+                        $("#error").html('Only images are allowed!');
+                   else if (fileSize > 6000000)
+                       $("#error").html('Your file is too big! Max allowed size is: 6 MEGA');
+                   else {
+                       $("#error").html("");
+                       data.submit();
+                   }
+               }).on('fileuploaddone', function(e, data) {
+                    var status = data.jqXHR.responseJSON.status;
+                    var msg = data.jqXHR.responseJSON.msg;
+
+                    if (status == 1) {
+                        var path = data.jqXHR.responseJSON.path;
+                        $("#files").fadeIn().append('<p><img style="width: 100px; height: 100px;" src="'+path+'" /></p>');
+                    } else
+                        $("#error").html(msg);
+               }).on('fileuploadprogressall', function(e,data) {
+                    var progress = parseInt(data.loaded / data.total * 100, 10);
+                    $("#progress").html("Completed: " + progress + "%");
+               });
+            });
+        </script>
 
 
 

@@ -1,4 +1,5 @@
 <?php
+session_start();
  require_once "google/config.php";
 
 	if (isset($_SESSION['access_token'])) {
@@ -57,6 +58,10 @@ $dbname = "meiranga_mishtamshim";
 					
 				   $result2 = $conn->query("SELECT password FROM parents where email  = '".$email."'");
 				   $passwordPHP =$result2->fetch_assoc();
+				  
+			
+				   
+
 				    				   
 
 	
@@ -64,7 +69,25 @@ $dbname = "meiranga_mishtamshim";
 		var passwordJS ;
 passwordJS = "<?php echo $passwordPHP['password']; ?>";
 if(ppassword==passwordJS){
-	alert("you are login");
+	<?php $_SESSION['email']=$email;?>
+	   <?php
+$servername = "localhost:3306";
+$username = "meiranga_gilad";
+$password = "gilad123";
+$dbname = "meiranga_mishtamshim";
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+					// Check connection
+					if ($conn->connect_error) {
+						 die("Connection failed: " . $conn->connect_error);
+					} 
+					  $result2 = $conn->query("SELECT picture FROM parents where email  = '".$email."'");
+				   $imagePHP =$result2->fetch_assoc();
+				
+				  $_SESSION['picture']="../../file/images/".$imagePHP['picture']."";
+					?>
+	window.location.href = ("includes/parents/home-parent.php");
 	
 }
 else{
@@ -107,11 +130,12 @@ else{
    
     <div class="collapse navbar-collapse" id="respManu">
       <ul class="nav navbar-nav navbar-left">
-          <li><a href="register.html">Sign Up</a></li>
+          <li><a href="rregister.php">Sign Up</a></li>
           <li><a href="#">How it's works</a></li>
           <li><a href="#">The team</a></li>         
           <li><a href="#">Contact Us</a></li>
-             <li><a href="#"> <?php echo $_POST['email']; ?></a></li>
+            
+			
           
         <li class="dropdown">
         </li>
@@ -157,7 +181,7 @@ else{
 								 </form>
 							</div>
 							<div class="bottom text-center">
-								New here ? <a href="register.html"><b>Join Us</b></a>
+								New here ? <a href="rregister.php"><b>Join Us</b></a>
 							</div>
 					 </div>
 				</li>
