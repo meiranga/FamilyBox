@@ -1,3 +1,21 @@
+<?php session_start(); ?>
+  <?php
+	
+$servername = "localhost:3306";
+$username = "meiranga_gilad";
+$password = "gilad123";
+$dbname = "meiranga_mishtamshim";
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+					// Check connection
+					if ($conn->connect_error) {
+						 die("Connection failed: " . $conn->connect_error);
+					} 
+					
+					
+					
+					?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,19 +28,27 @@
     <title>FamilyBox</title>
     
 
-     <!--Font-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
-    <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap -->
+    <link href="../../bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- Dropzone.js -->
-    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    <link href="../../nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../../green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="../../prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="../../select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../../switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="../../starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../../daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="../../custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -47,7 +73,7 @@
               </div>
             </div>
             <!-- /menu profile quick info -->
-
+            
             <br />
 
             <!-- sidebar menu -->
@@ -209,7 +235,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Add Family Member</h3>
+                <h3>Add New Gift</h3>
               </div>
 
 
@@ -220,160 +246,82 @@
 
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
-                  
-                  <div class="x_content">
-
-
-
-
-                    <h2>Add your Family and start enjoy</h2>
-                    <!-- Tabs -->
-                    <div id="wizard_verticle" class="form_wizard wizard_verticle">
-                      <ul class="list-unstyled wizard_steps">
-                        <li>
-                          <a href="#step-11">
-                            <span class="step_no">1</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-22">
-                            <span class="step_no">2</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-33">
-                            <span class="step_no">3</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-44">
-                            <span class="step_no">4</span>
-                          </a>
-                        </li>
-                      </ul>
-
-                      <div id="step-11">
-                        <h2 class="StepTitle">Step 1</h2>
-                        <form class="form-horizontal form-label-left">
-
-                          <span class="section">Personal Info</span>
-
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3" for="first-name">First Name <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input type="text" id="first-name2" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3" for="last-name">Last Name <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input type="text" id="last-name2" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                          </div>
-                          
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3">Gender</label>
-                            <div class="col-md-6 col-sm-6">
-                              <div id="gender2" class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
-                                </label>
-                                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="gender" value="female" checked=""> Female
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3">Date Of Birth <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input id="birthday2" class="date-picker form-control col-md-7 col-xs-12" required="required" type="date">
-                            </div>
-                          </div>
-
-                        </form>
-                      </div>
-                      <div id="step-22">
-                         <h2 class="StepTitle">Step 2</h2>
-                        <form class="form-horizontal form-label-left">
-
-                          <span class="section">User info</span>
-
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3" for="first-name">Email <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input type="email" id="user_email" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3" for="last-name">Password <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input type="text" id="last-name2" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="middle-name" class="control-label col-md-3 col-sm-3">Confirm Password</label>
-                            <div class="col-md-6 col-sm-6">
-                              <input id="middle-name2" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                            </div>
-                          </div>
-                            
-                          <div class="form-group">
-                            <label for="middle-name" class="control-label col-md-3 col-sm-3">Mobile</label>
-                            <div class="col-md-6 col-sm-6">
-                              <input id="middle-name2" class="form-control col-md-7 col-xs-12" type="tel" name="middle-name">
-                            </div>
-                          </div>
-                          
-                          
-
-                        </form>
-                      </div>
-                      <div id="step-33">
-                        <h2 class="StepTitle">Step 3</h2>
-                        <div class="form-group">
-                            <span class="section">User Permission</span>
-                            <div class="col-md-6 col-sm-6">
-                              <div id="gender2" class="btn-group" data-toggle="buttons">
-                                  
-                                <label class="btn permissionRadio" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="userPermession" value="parent">  <img src="images/parentsBlack.png" class="img-thumbnail img-responsive img-container">
-                                <figcaption>Parent</figcaption>
-                                </label>
-                                  
-                                <label class="btn permissionRadio" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="userPermession" value="child" checked=""> 
-                                <img src="images/kidsBlack.gif" class="img-thumbnail img-responsive">
-                                <figcaption>Child</figcaption>
-                                </label>
-                                  
-                                   
-                                  
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <div id="step-44">
-                        <h2 class="StepTitle">Step 4</h2>
-                       <span class="section">Add a Photo</span>
-                          
-            
-                  <div class="x_content">
-                    <p>Drag a picture to the box below or click to select a picture.</p>
-                    <form action="form_upload.html" class="dropzone"></form>
-                    <br />
-                    <br />
-                        
+                  <div class="x_title">
+                    <h2>Gift Form<small> Motivate your kids!</small></h2>
+                    <div class="clearfix"></div>
                   </div>
-               
-                          
+                  
+
+                    
+                    <!-- Form -->
+                                    
+                    
+                    <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" action="addNewGiftBack.php">
+
+                        <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="gift-type">Type: <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                         <select name="itemType" class="form-control col-md-7 col-xs-12">
+            <option value="" selected disabled hidden requierd>Choose here</option>
+            <option value="trip">Trip</option>
+            <option value="friends">Friends</option>
+            <option value="gift">Gift</option>
+            <option value="movie">Movie</option>
+            <option value="game">Game</option>
+            <option value="sprot">Sport</option>
+            <option value="music">Music</option>
+            <option value="food">Food</option>
+            <option value="other">Other</option>    
+                </select>
+                            </div></div>  
+                        
+                        
+                        
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="itemName" id="gift-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
                       </div>
-                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Points <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="number" id="gift-price" name="price" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                                          
+                        
+                        <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Add picture<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="gift-date" class="date-picker form-control dropzone col-md-7 col-xs-12" required="required" type="file" >
+                        </div>
+                      </div>
+                        
+                       
+                        
+                        
+                        
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="button">Cancel</button>
+						  <button class="btn btn-primary" type="reset">Reset</button>
+                          <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  
+                      
+                     
+                    
                     <!-- End SmartWizard Content -->
                   </div>
                 </div>
@@ -386,7 +334,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            All Rights Reserved to <a href="https://colorlib.com">FamilyBox</a>
+            All Rights Reserved to <a href="#">FamilyBox</a>
           </div>
           <div class="clearfix"></div>
         </footer>
@@ -395,19 +343,19 @@
     </div>
 
     <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../addons/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../addons/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="../../addons/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
+    <script src="../../addons/nprogress.js"></script>
     <!-- jQuery Smart Wizard -->
-    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <script src="../../addons/jquery.smartWizard.js"></script>
     <!-- Dropzone.js -->
-    <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../../addons/dropzone.min.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+    <script src="../../addons/custom.min.js"></script>
 
 	
   </body>

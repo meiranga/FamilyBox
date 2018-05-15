@@ -4890,7 +4890,7 @@ ul.notifications {
 
 .dropzone {
     min-height: 300px;
-    border: 1px solid black
+   /* border: 1px solid black*/
 }
 
 .main_menu .label {
@@ -4921,3 +4921,5 @@ ul.notifications {
 .dataTables_wrapper > .row {
     overflow: auto!important
 }
+
+

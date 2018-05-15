@@ -1,3 +1,21 @@
+<?php session_start(); ?>
+  <?php
+	
+$servername = "localhost:3306";
+$username = "meiranga_gilad";
+$password = "gilad123";
+$dbname = "meiranga_mishtamshim";
+
+					// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+					// Check connection
+					if ($conn->connect_error) {
+						 die("Connection failed: " . $conn->connect_error);
+					} 
+					
+					
+					
+					?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,18 +28,27 @@
     <title>FamilyBox</title>
     
 
-     <!--Font-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
-    <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap -->
+    <link href="../../bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- Dropzone.js -->
-    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    <link href="../../nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../../green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="../../prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="../../select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../../switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="../../starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../../daterangepicker.css" rel="stylesheet">
+
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="../../custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -46,7 +73,7 @@
               </div>
             </div>
             <!-- /menu profile quick info -->
-
+            
             <br />
 
             <!-- sidebar menu -->
@@ -208,127 +235,94 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3> Family Store</h3>
+                <h3>Add New Gift</h3>
               </div>
 
-              
-            </div>
 
+            </div>
             <div class="clearfix"></div>
 
             <div class="row">
-              <div class="col-md-12">
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>All the items <small>come on, bring something new :)</small></h2>
-                    
+                    <h2>Gift Form<small> Motivate your kids!</small></h2>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="x_content">
+                  
 
-                    <div class="row">
+                    
+                    <!-- Form -->
+                                    
+                    
+                    <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" action="addNewGiftBack.php">
 
-                      <p>Media gallery design emelents</p>
-
-                      <div class="col-md-55">
-                        <div class="thumbnail">
-                          <div class="image view view-first">
-                            <img style="width: 100%; display: block;" src="images/trip.jpg" alt="image" />
-                            <div class="mask">
-                              <p>Trip</p>
-                              <div class="tools tools-bottom">
-                                <a href="#"><i class="fa fa-pencil"></i></a>
-                                <a href="#"><i class="fa fa-times"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="caption">
-                             <p>Price: <small> 100 Points</small></p>
-                            <p>Date: <small> 30.5.18</small></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-55">
-                        <div class="thumbnail">
-                          <div class="image view view-first">
-                            <img style="width: 100%; display: block;" src="images/PS4_remoteControl.jpg" alt="image" />
-                            <div class="mask">
-                              <p>PlayStation game</p>
-                              <div class="tools tools-bottom">
-                                <a href="#"><i class="fa fa-pencil"></i></a>
-                                <a href="#"><i class="fa fa-times"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="caption">
-                             <p>Price: <small> 150 Points</small></p>
-                            <p>Date: <small> 23.5.18</small></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-55">
-                        <div class="thumbnail">
-                          <div class="image view view-first">
-                            <img style="width: 100%; display: block;" src="images/images.jpg" alt="image" />
-                            <div class="mask">
-                              <p>Your Text</p>
-                              <div class="tools tools-bottom">
-                                
-                                <a href="#"><i class="fa fa-pencil"></i></a>
-                                <a href="#"><i class="fa fa-times"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="caption">
-                             <p>Price: <small> 300 Points</small></p>
-                            <p>Date: <small> 15.5.18</small></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-55">
-                        <div class="thumbnail">
-                          <div class="image view view-first">
-                            <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                            <div class="mask">
-                              <p>A new computer</p>
-                              <div class="tools tools-bottom">
-                                
-                                <a href="#" alt="Edit"><i class="fa fa-pencil"></i></a>
-                                <a href="#" alt="Delete"><i class="fa fa-times"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="caption">
-                            
-                            <p>Price: <small> 100 Points</small></p>
-                            <p>Date: <small> 30.5.18</small></p>
-                          </div>
-                        </div>
-                      </div>
-                     
-                        <div class="col-md-55">
-                        <div class="thumbnail">
-                          <div class="image view view-first">
-                            <img style="width: 100%; display: block;" src="images/kinder-egg.jpg" alt="image" />
-                            <div class="mask">
-                              <p>A new computer</p>
-                              <div class="tools tools-bottom">
-                                
-                                <a href="#" alt="Edit"><i class="fa fa-pencil"></i></a>
-                                <a href="#" alt="Delete"><i class="fa fa-times"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="caption">
-                            
-                            <p>Price: <small> 20 Points</small></p>
-                            <p>Date: <small> 10.5.18</small></p>
-                          </div>
-                        </div>
-                      </div>
-         
+                        <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="gift-type">Type: <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                         <select name="itemType" class="form-control col-md-7 col-xs-12">
+            <option value="" selected disabled hidden requierd>Choose here</option>
+            <option value="trip">Trip</option>
+            <option value="friends">Friends</option>
+            <option value="gift">Gift</option>
+            <option value="movie">Movie</option>
+            <option value="game">Game</option>
+            <option value="sprot">Sport</option>
+            <option value="music">Music</option>
+            <option value="food">Food</option>
+            <option value="other">Other</option>    
+                </select>
+                            </div></div>  
                         
-                    </div>
+                        
+                        
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="itemName" id="gift-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Points <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="number" id="gift-price" name="price" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                                          
+                        
+                        <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Add picture<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="gift-date" class="date-picker form-control dropzone col-md-7 col-xs-12" required="required" type="file" >
+                        </div>
+                      </div>
+                        
+                       
+                        
+                        
+                        
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="button">Cancel</button>
+						  <button class="btn btn-primary" type="reset">Reset</button>
+                          <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  
+                      
+                     
+                    
+                    <!-- End SmartWizard Content -->
                   </div>
                 </div>
               </div>
@@ -340,7 +334,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-             All Rights Reserved to <a href="#">FamilyBox</a>
+            All Rights Reserved to <a href="#">FamilyBox</a>
           </div>
           <div class="clearfix"></div>
         </footer>
@@ -349,15 +343,20 @@
     </div>
 
     <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../addons/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../addons/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="../../addons/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-
+    <script src="../../addons/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="../../addons/jquery.smartWizard.js"></script>
+    <!-- Dropzone.js -->
+    <script src="../../addons/dropzone.min.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+    <script src="../../addons/custom.min.js"></script>
+
+	
   </body>
 </html>

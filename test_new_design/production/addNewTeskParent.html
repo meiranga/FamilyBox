@@ -1,7 +1,33 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<?php
+$servername = "localhost:3306";
+$username = "meiranga_gilad";
+$password = "gilad123";
+$dbname = "meiranga_mishtamshim";
 
-<head>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+} 
+ if($_POST["emailChild"] !=""){
+ $emailChild=$_POST["emailChild"];
+$result2 = $conn->query("SELECT firstname, lastname, picture, point, iid FROM children where email  = '".$emailChild."'");
+				   $row =$result2->fetch_assoc();
+				  
+	$childPicture="../../file/images/".$row['picture']."";
+	$_SESSION['childPicture']= $childPicture;
+	$_SESSION['emailChild']= $emailChild;
+	$_SESSION['iid']= $row['iid'];
+	$_SESSION['childName']= $row["firstname"];
+	$_SESSION['childPoint']= $row["point"];
+ }
+
+?>
+<html lang="en">
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
@@ -9,21 +35,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>FamilyBox</title>
+    
 
-    <!--Font-->
+     <!--Font-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../../nprogress.css" rel="stylesheet">
     <!-- Dropzone.js -->
-    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
-
+    <link href="../../dropzone.min.css" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
-</head>
+    <link href="../../custom.min.css" rel="stylesheet">
+  </head>
 
 <body class="nav-md">
     <div class="container body">
@@ -265,15 +291,18 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">
                             Drag a picture:
                         </label>
-                                            <div class="x_content">
+                                            
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
 
-
-                                                    <form action="form_upload.html" class="dropzone"></form>
-                                                    <br />
-                                                    <br /><br />
-
-                                                </div>
+                                                    
+                                                 <div class="x_content">
+                    <p>Drag a picture to the box below or click to select a picture.</p>
+                    <form action="form_upload.html" class="dropzone"></form>
+                    <br />
+                    <br />
+                        
+                  </div>
+               
                                             </div>
                                         </div>
                                         <div class="ln_solid"></div>
@@ -317,19 +346,19 @@
     </div>
 
     <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../addons/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../addons//bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="../../addons//fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
+    <script src="../../addons//nprogress.js"></script>
     <!-- jQuery Smart Wizard -->
-    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <script src="../../addons/jquery.smartWizard.js"></script>
     <!-- Dropzone.js -->
-    <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../../addons/dropzone.min.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+    <script src="../../addons//custom.min.js"></script>
 </body>
 
 </html>
