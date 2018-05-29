@@ -204,10 +204,12 @@ input[type=date] {
 input[type=file] {
     
     box-sizing: border-box;
-    border: none;
+    
     background-color: #556270;
     color: white;
-    width: 60%;
+    text-align: center;
+    
+    width: 85%;
 }
 
 
@@ -221,6 +223,12 @@ select{
 .button{
     background-color: #444e59;
     
+}
+
+
+.button:hover{
+    color:#556270;
+    background-color: white;
 }
 
 #gender{
@@ -237,10 +245,27 @@ select{
     padding-top: 3%;
 }
 
+#dropZone {
+border: 2px dashed #556270;
+padding-left: 10%;
+box-sizing: border-box;
+float:right;
+color: #556270;
+width: 60%;
+}
 
+    #files {
+        border: 1px dotted #556270;
+        display: none;
+    }
 
+    #error {
+        color: red;
+    }
 
-
+#dANDd{
+    text-align: center;
+}
 
 
 
@@ -309,6 +334,15 @@ select{
     
     width:100%; 
 }
+    
+input[type=file] {
+    
+    width: 100%;
+}
+    
+#dropZone {
+width: 100%;
+    }
     
     #logo{
     

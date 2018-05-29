@@ -1,0 +1,45 @@
+[06-May-2018 12:12:46 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/meiranga/public_html/includes/kids/todo.php on line 76
+[06-May-2018 12:15:33 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/meiranga/public_html/includes/kids/todo.php on line 76
+[07-May-2018 07:35:36 UTC] PHP Parse error:  syntax error, unexpected '">"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/kids/familyshope.php on line 89
+[07-May-2018 15:42:06 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/meiranga/public_html/includes/kids/familyshope.php on line 20
+[07-May-2018 15:43:23 UTC] PHP Parse error:  syntax error, unexpected '$sql2' (T_VARIABLE) in /home/meiranga/public_html/includes/kids/familyshope.php on line 25
+[09-May-2018 08:06:15 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/kids/myfamily.php on line 96
+[09-May-2018 09:13:51 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/meiranga/public_html/includes/kids/myfamily.php on line 98
+[11-May-2018 06:27:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/meiranga/public_html/includes/kids/myfamily.php on line 24
+[11-May-2018 06:28:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/meiranga/public_html/includes/kids/myfamily.php on line 24
+[11-May-2018 06:28:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/meiranga/public_html/includes/kids/myfamily.php on line 24
+[11-May-2018 06:28:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/meiranga/public_html/includes/kids/myfamily.php on line 24
+[11-May-2018 06:38:32 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/kids/myfamily.php on line 27
+[11-May-2018 06:40:46 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/kids/myfamily.php on line 164
+[11-May-2018 06:42:24 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/kids/myfamily.php on line 164
+[11-May-2018 06:42:27 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/kids/myfamily.php on line 164
+[11-May-2018 10:39:22 UTC] PHP Fatal error:  Cannot use [] for reading in /home/meiranga/public_html/includes/kids/myfamily.php on line 173
+[16-May-2018 16:20:09 UTC] PHP Parse error:  syntax error, unexpected '$_SESSION' (T_VARIABLE), expecting ',' or ';' in /home/meiranga/public_html/includes/kids/todo.php on line 50
+[16-May-2018 16:20:59 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/meiranga/public_html/includes/kids/todo.php on line 50
+[16-May-2018 17:02:55 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/meiranga/public_html/includes/kids/todo.php on line 97
+[21-May-2018 17:54:06 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/kids/myfamily.php on line 17
+[21-May-2018 17:58:13 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/meiranga/public_html/includes/kids/todo.php on line 128
+[27-May-2018 12:58:38 UTC] PHP Parse error:  syntax error, unexpected '" "' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/kids/myfamily.php on line 110
+[27-May-2018 13:55:16 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/meiranga/public_html/includes/kids/myfamily.php on line 173
+[27-May-2018 21:16:20 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[27-May-2018 21:16:20 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[27-May-2018 21:16:29 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[27-May-2018 21:16:29 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[27-May-2018 21:18:14 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[27-May-2018 21:18:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[27-May-2018 21:58:00 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[27-May-2018 21:58:00 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[28-May-2018 14:38:02 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[28-May-2018 14:38:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[28-May-2018 14:38:30 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[28-May-2018 14:38:30 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[28-May-2018 14:38:33 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[28-May-2018 14:38:33 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:51:25 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:51:25 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:52:14 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:52:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:53:03 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:53:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:54:06 UTC] PHP Warning:  require_once(google/config.php): failed to open stream: No such file or directory in /home/meiranga/public_html/includes/kids/taskskid.php on line 3
+[29-May-2018 05:54:06 UTC] PHP Fatal error:  require_once(): Failed opening required 'google/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/meiranga/public_html/includes/kids/taskskid.php on line 3

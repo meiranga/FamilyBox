@@ -94,7 +94,8 @@ main{
 }
 
 .childs ul li{
-    display: inline-block;
+    
+    list-style-type: none;
 }
 
 /*
@@ -186,14 +187,17 @@ main{
 .thumbnail {
     min-height: 300px; 
     vertical-align: top;
+	float:left;
+
 
 }
 
-.thumbnail a img{
+.kidPic{
     margin-right: auto;
     margin-left: auto;
     height: 240px;
     width: 200px;
+	
 }
 
 

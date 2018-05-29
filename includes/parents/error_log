@@ -1,0 +1,121 @@
+[26-Apr-2018 08:57:11 UTC] PHP Parse error:  syntax error, unexpected 'childs' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 113
+[26-Apr-2018 08:58:44 UTC] PHP Parse error:  syntax error, unexpected 'thumbnail' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 117
+[26-Apr-2018 08:59:40 UTC] PHP Parse error:  syntax error, unexpected 'parentTasks' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 117
+[26-Apr-2018 09:00:37 UTC] PHP Parse error:  syntax error, unexpected 'home' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 117
+[26-Apr-2018 09:44:30 UTC] PHP Parse error:  syntax error, unexpected '" alt=\"...\"></a>"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) in /home/meiranga/public_html/includes/parents/home-parent.php on line 118
+[26-Apr-2018 09:45:01 UTC] PHP Parse error:  syntax error, unexpected '" </a>"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) in /home/meiranga/public_html/includes/parents/home-parent.php on line 118
+[26-Apr-2018 09:48:06 UTC] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) in /home/meiranga/public_html/includes/parents/home-parent.php on line 118
+[26-Apr-2018 09:59:43 UTC] PHP Parse error:  syntax error, unexpected '">"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) in /home/meiranga/public_html/includes/parents/home-parent.php on line 118
+[28-Apr-2018 17:07:14 UTC] PHP Parse error:  syntax error, unexpected '$_SESSION' (T_VARIABLE) in /home/meiranga/public_html/includes/parents/parentTasks.php on line 79
+[30-Apr-2018 19:23:47 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/meiranga/public_html/includes/parents/home-parent.php on line 177
+[01-May-2018 14:28:33 UTC] PHP Parse error:  syntax error, unexpected 'kidPic' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 122
+[01-May-2018 14:33:14 UTC] PHP Parse error:  syntax error, unexpected '250' (T_LNUMBER), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 122
+[01-May-2018 14:33:29 UTC] PHP Parse error:  syntax error, unexpected '250' (T_LNUMBER), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 122
+[01-May-2018 14:33:32 UTC] PHP Parse error:  syntax error, unexpected '250' (T_LNUMBER), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 122
+[02-May-2018 17:06:51 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/meiranga/public_html/includes/parents/parentTasks.php on line 164
+[04-May-2018 10:16:46 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/meiranga/public_html/includes/parents/storeParentBack.php on line 47
+[06-May-2018 14:26:34 UTC] PHP Parse error:  syntax error, unexpected '" class=\"img-thumbnail img-re' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 355
+[06-May-2018 14:28:23 UTC] PHP Parse error:  syntax error, unexpected '" class=\"img-thumbnail img-re' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 355
+[06-May-2018 14:28:32 UTC] PHP Parse error:  syntax error, unexpected '" class=\"img-thumbnail img-re' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 355
+[06-May-2018 14:31:41 UTC] PHP Parse error:  syntax error, unexpected '" class=\"img-thumbnail img-re' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 355
+[06-May-2018 14:38:01 UTC] PHP Parse error:  syntax error, unexpected '" class=\"img-thumbnail img-re' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 355
+[06-May-2018 16:06:43 UTC] PHP Parse error:  syntax error, unexpected ''<div class="col-xs-12 col-sm-' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 327
+[06-May-2018 16:06:50 UTC] PHP Parse error:  syntax error, unexpected ''<div class="col-xs-12 col-sm-' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 327
+[06-May-2018 16:07:29 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 327
+[06-May-2018 16:08:10 UTC] PHP Parse error:  syntax error, unexpected ''<i>class="fa fa-user"></i>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 330
+[06-May-2018 16:09:16 UTC] PHP Parse error:  syntax error, unexpected 'View' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 329
+[06-May-2018 16:10:47 UTC] PHP Parse error:  syntax error, unexpected 'View' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 329
+[06-May-2018 16:11:23 UTC] PHP Parse error:  syntax error, unexpected ''<i class="fa fa-user"> View P' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 330
+[06-May-2018 16:12:05 UTC] PHP Parse error:  syntax error, unexpected ''<i class="fa fa-user"></i>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 330
+[06-May-2018 16:12:13 UTC] PHP Parse error:  syntax error, unexpected ''<i class="fa fa-user"></i>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 330
+[06-May-2018 16:12:58 UTC] PHP Parse error:  syntax error, unexpected ''View Profile'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 330
+[12-May-2018 10:31:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:31:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:32:22 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:32:24 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:33:24 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:33:26 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:34:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:34:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:34:24 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:35:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:35:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:41:44 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:42:43 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:43:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[12-May-2018 10:43:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 55
+[15-May-2018 11:52:20 UTC] PHP Parse error:  syntax error, unexpected 'silver' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 11:52:22 UTC] PHP Parse error:  syntax error, unexpected 'silver' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 12:06:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 12:06:34 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 12:09:17 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 12:14:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 12:15:45 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 12:16:18 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 58
+[15-May-2018 12:16:18 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 83
+[15-May-2018 12:16:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/meiranga/public_html/includes/parents/report.php on line 83
+[16-May-2018 17:29:45 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 201
+[16-May-2018 17:29:50 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 201
+[16-May-2018 17:30:23 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 201
+[16-May-2018 17:31:27 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 201
+[16-May-2018 17:31:31 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 201
+[16-May-2018 17:31:45 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 201
+[16-May-2018 17:41:45 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 200
+[16-May-2018 17:42:05 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 200
+[17-May-2018 11:30:04 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home/meiranga/public_html/includes/parents/childProfile.php on line 323
+[17-May-2018 14:47:54 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/childProfile.php on line 541
+[17-May-2018 15:17:07 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/childProfile.php on line 541
+[17-May-2018 15:19:43 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/childProfile.php on line 541
+[17-May-2018 15:20:51 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/childProfile.php on line 541
+[17-May-2018 15:22:21 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/meiranga/public_html/includes/parents/childProfile.php on line 327
+[17-May-2018 15:24:08 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/meiranga/public_html/includes/parents/childProfile.php on line 327
+[17-May-2018 15:24:11 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/meiranga/public_html/includes/parents/childProfile.php on line 327
+[17-May-2018 15:24:18 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/meiranga/public_html/includes/parents/childProfile.php on line 327
+[17-May-2018 15:25:28 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/meiranga/public_html/includes/parents/childProfile.php on line 321
+[17-May-2018 15:25:52 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/childProfile.php on line 325
+[17-May-2018 15:26:13 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/childProfile.php on line 325
+[18-May-2018 11:08:33 UTC] PHP Parse error:  syntax error, unexpected '$counter' (T_VARIABLE), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/childProfile.php on line 296
+[18-May-2018 14:09:18 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 175
+[18-May-2018 14:13:27 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 175
+[18-May-2018 14:13:57 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 175
+[18-May-2018 14:14:32 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 175
+[18-May-2018 14:14:37 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 175
+[18-May-2018 14:15:00 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 177
+[18-May-2018 14:19:27 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 3
+[18-May-2018 14:20:55 UTC] PHP Fatal error:  Call to a member function query() on null in /home/meiranga/public_html/includes/parents/removeUser.php on line 8
+[18-May-2018 15:46:21 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/meiranga/public_html/includes/parents/childProfile.php on line 604
+[18-May-2018 15:46:55 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/meiranga/public_html/includes/parents/childProfile.php on line 604
+[18-May-2018 15:47:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/meiranga/public_html/includes/parents/childProfile.php on line 604
+[18-May-2018 15:47:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/meiranga/public_html/includes/parents/childProfile.php on line 604
+[19-May-2018 11:39:54 UTC] PHP Parse error:  syntax error, unexpected 'localhost' (T_STRING), expecting ',' or ';' in /home/meiranga/public_html/includes/parents/childProfile.php on line 371
+[19-May-2018 13:56:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/meiranga/public_html/includes/parents/childProfile.php on line 393
+[19-May-2018 13:56:09 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/meiranga/public_html/includes/parents/childProfile.php on line 393
+[19-May-2018 13:59:26 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/meiranga/public_html/includes/parents/childProfile.php on line 356
+[19-May-2018 14:05:26 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/meiranga/public_html/includes/parents/childProfile.php on line 357
+[19-May-2018 14:14:39 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/meiranga/public_html/includes/parents/childProfile.php on line 358
+[19-May-2018 14:16:42 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/meiranga/public_html/includes/parents/childProfile.php on line 358
+[19-May-2018 14:19:39 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/meiranga/public_html/includes/parents/childProfile.php on line 358
+[19-May-2018 15:17:56 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/meiranga/public_html/includes/parents/childProfile.php on line 358
+[19-May-2018 15:22:56 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/meiranga/public_html/includes/parents/childProfile.php on line 364
+[19-May-2018 19:23:21 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/editProfile.php on line 16
+[19-May-2018 22:57:44 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home/meiranga/public_html/includes/parents/home-parent.php on line 169
+[20-May-2018 20:05:05 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/editProfileBack.php on line 29
+[23-May-2018 16:19:21 UTC] PHP Warning:  Illegal string offset 'sumpoint' in /home/meiranga/public_html/includes/parents/report.php on line 497
+[23-May-2018 16:19:45 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/meiranga/public_html/includes/parents/report.php on line 25
+[23-May-2018 16:21:00 UTC] PHP Fatal error:  Call to undefined function fetch_assoc() in /home/meiranga/public_html/includes/parents/report.php on line 28
+[23-May-2018 16:21:01 UTC] PHP Fatal error:  Call to undefined function fetch_assoc() in /home/meiranga/public_html/includes/parents/report.php on line 28
+[23-May-2018 16:22:10 UTC] PHP Fatal error:  Call to undefined function fetch_assoc() in /home/meiranga/public_html/includes/parents/report.php on line 28
+[23-May-2018 16:22:55 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 28
+[23-May-2018 16:23:45 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 28
+[23-May-2018 16:23:46 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 28
+[23-May-2018 16:29:20 UTC] PHP Warning:  mysqli::query() expects parameter 1 to be string, array given in /home/meiranga/public_html/includes/parents/report.php on line 31
+[23-May-2018 16:29:48 UTC] PHP Warning:  mysqli::query() expects parameter 1 to be string, array given in /home/meiranga/public_html/includes/parents/report.php on line 31
+[23-May-2018 16:29:48 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/meiranga/public_html/includes/parents/report.php on line 32
+[23-May-2018 16:30:27 UTC] PHP Warning:  mysqli::query(): Empty query in /home/meiranga/public_html/includes/parents/report.php on line 31
+[23-May-2018 16:30:27 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 32
+[23-May-2018 16:30:50 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 32
+[23-May-2018 16:32:52 UTC] PHP Parse error:  syntax error, unexpected '' ";' (T_CONSTANT_ENCAPSED_STRING) in /home/meiranga/public_html/includes/parents/report.php on line 65
+[23-May-2018 16:34:15 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 32
+[27-May-2018 15:32:08 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/meiranga/public_html/includes/parents/childProfile.php on line 451
+[29-May-2018 09:10:33 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 32
+[29-May-2018 09:10:38 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/meiranga/public_html/includes/parents/report.php on line 32

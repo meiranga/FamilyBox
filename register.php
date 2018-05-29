@@ -31,12 +31,7 @@ if (isset($_FILES['attachments'])) {
         $msg = "";
       if (move_uploaded_file($_FILES['attachments']['tmp_name'][0], $targetFile))
             $msg = array("status" => 1, "msg" => "File Has Been Uploaded", "path" => $targetFile);
-  
-		
-
-		
 		}
-
 
 
 
@@ -58,12 +53,13 @@ $id=$row['COUNT(iid)'];
 
 	$_SESSION['email'] =$email;
 	$_SESSION['gender'] =$sex;
-	$_SESSION['picture'] =$image;
+	
 	$_SESSION['familyName'] =$lastname;
 	$_SESSION['givenName'] =$firstname;
 	$_SESSION['phone'] =$phone;
 	$_SESSION['birthdate'] =$birthdate;
 	$_SESSION['iid']=$row['COUNT(iid)'];
+	$_SESSION['picture']="../../file/images/".$image."";
 
 
 $sql2="INSERT INTO parents (email, firstname, lastname, password, phone, birthdate, sex, picture,iid) VALUES ('".$email."','".$firstname."','".$lastname."','".$password."','".$phone."','".$birthdate."','".$sex."','".$image."','".$id."');";
@@ -78,120 +74,138 @@ $conn->close();
 ?>  
 
 
-<head>
+<head>	
+    <html lang="en">
+    <meta charset="utf-8">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<meta name="google-signin-client_id" content="268684866233-7ek1kntlgpcr6kr5frao02v6ui7joo93.apps.googleusercontent.com">
-	
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<html lang="en">
-    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-	 <link href="css/custom.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="css/general.css">
+	<link href="css/custom.css" rel="stylesheet">
     <title>FamilyBox</title>
+    <style>
+        .showDT{
+            margin:30px;
+            padding:5%;
+            float:right;
+
+        }
+        .welcomepic{
+            background-image:url('/img/fam.png');
+            background-repeat:no-repeat;
+            min-height: 100%;
+            margin-top:2%;
+        }
+        p{
+            color:#FFC55A;
+            font-size:24px;
+            margin-top:5%;
+        }
+
+    </style>
   </head>
+  
 <body>
-
-<br><br><br>
-<nav class="navbar navbar-default navbar-fixed-top" id="navmain">
-  <div class="container-fluid">
-    <div class="navbar-header navbar-left">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.php"> FamilyBox </a>
+<!-- Navbar (sit on top) -->
+<div class="welcomepic">
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <button class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" onclick="toggleFunction();">
+      <i class="fa fa-bars"></i>
+    </button>
+    <a href="index.php" class="w3-bar-item w3-button">HOME</a>
+    <!------------------The login open box of the top nav------------------------------------------------------->
+    <button class="w3-bar-item w3-button w3-hide-small" onclick="document.getElementById('login').style.display='block'" style="float:right;">
+    <i class="fa fa-sign-in"></i> LOG IN </button>
+     <div id="login" class="modal">
+       <form id="logform" class="modal-content animate form" role="form" method="post" action="index.php" accept-charset="UTF-8" id="login-nav">
+            <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="contain">
+	    <input type="email" id="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+        <input type="password" id="password" name="password"class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+        <button type="submit" class="signbutton"onclick="checkPassword()"> Login </button>
+        <center>
+        <input type="image" src="img/googlesign.png" class="goog"  onclick="window.location = '<?php echo $loginURL ?>';">
+        </center>
+        </div>
+        <div class="bottom text-center">
+		    <p>New Here ? <a class="joinT" href="rregister.php"><b>Join Us</b></a></p>
+	    </div>
+        <div class="contain" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+       </form>
     </div>
-   
-    <div class="collapse navbar-collapse" id="bs-example">
-      <ul class="nav navbar-nav navbar-left">
-          <li><a href="rregister.php">Sign Up</a></li>
-          <li><a href="#">How its works</a></li>
-          <li><a href="#">The team</a></li>         
-          <li><a href="#">Contact Us</a></li>
-           
-          
-        <li class="dropdown">
-        </li>
-      </ul>
 
-      <ul class="nav navbar-nav navbar-right">
-         
-        <li><p class="navbar-text">Already have an account?</p></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-			<ul id="login-dp" class="dropdown-menu">
-				<li>
-					 <div class="row">
-							<div class="col-md-12">
-								Login via
-								<div class="social-buttons">
-									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-								<input type="button" onclick="window.location = '<?php echo $loginURL ?>';"class="btn btn-gl" class="fa fa-google" value="Google" >
-								</div>
-                                or
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-										</div>
-										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-										</div>
-										<div class="checkbox">
-											 <label>
-											 <input type="checkbox"> keep me logged-in
-											 </label>
-										</div>
-								 </form>
-							</div>
-							<div class="bottom text-center">
-								New here ? <a href="rregister.php"><b>Join Us</b></a>
-							</div>
-					 </div>
-				</li>
-			</ul>
-        </li>
-      </ul>
-       
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+ </div>
 
-<div>
-<div class="container" >
-		<?php echo $_POST["name"]; ?>
-		<?php echo $_POST["familyName"]; ?>
+ <!----------- Navbar on small screens ------------>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <div class="col-md-12">
+				<form class="form" role="form" method="post" action="index.php" accept-charset="UTF-8" id="login-nav">
+					<div class="form-group">
+						<input type="email" id="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required>
+					</div>
+					<div class="form-group">
+						<input type="password" id="password" name="password"class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="signbutton" onclick="checkPassword()">Login</button>
+					</div>
+				</form>
+				<center>
+					<input type="image" src="img/googlesign.png" class="goog" value="Google" onclick="window.location = '<?php echo $loginURL ?>';">
+				</center>
+		</div>
+  </div>
+  
+</div>
+
+<!------------------------- end of the top nav (small and big screens) ------------------------->
+    
+
+<!--- the ditails of the new member after signed in --->
+
+<div class="showDT" >
+		<?php 
+		echo "<center><h1><img src='file/images/".$imagePHP['picture']."' height=100 width=100 style=\"border-radius:50%\"></h1>";
+		echo "<h1> Hello ".$_POST["name"]." ";
+		echo $_POST["familyName"]."!</h1>";
+		echo "<p>Welcome to <b>Family Box</b><img src=\"/img/giphy.gif\" width=\"100px\" height=\"100px\"> <br> 
+		        congratulations on joining our family<br>
+		        we are hoping you will enjoy !</p></center>";
+		?>
+		 <br><br>
+	    <center><a href="index.php" onclick="signOut();" style="border:solid grey 2px"><h3> Back Home </h3></a></center>
+		 <center><a href="includes/parents/home-parent.php"  style="border:solid grey 2px"><h3> Continue </h3></a></center>
+
+		
+		
+		<!--<?php echo $_POST["familyName"]; ?>
 		<?php echo $_POST["email"]; ?>
 		<?php echo $_POST["Bdate"]; ?>
 		<?php echo $_POST["password"]; ?>
 		<?php echo $_POST["password2"]; ?>
 		<?php echo $_POST["phone"]; ?>
 		<?php echo $_POST["gender"]; ?>	
-		<?php  echo "<img src='file/images/".$imagePHP['picture']."' height=100 width=100>";?>
-		 <?php echo $row['COUNT(iid)']; ?>	
+		<?php  echo "<img src='file/images/".$imagePHP['picture']."' height=100 width=100 >";?>
+		 <?php echo $row['COUNT(iid)']; ?>-->
 		 
-	
-		
-	<a href="index.php" onclick="signOut();">Sign out</a>
-
-
+</div>
 
 </div>
-</div>
+
 
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
@@ -233,12 +247,40 @@ $conn->close();
                     $("#progress").html("Completed: " + progress + "%");
                });
             });
-        </script>
+            
+            
+            // Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
 
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 
+// Get the modal
+var modal = document.getElementById('login');
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
-
+</script>
 
 </body>
 </html>

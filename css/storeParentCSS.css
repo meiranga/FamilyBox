@@ -1,0 +1,359 @@
+*{font-family: Merienda One;}
+
+body{
+        background-image: url(../img/wooden-white2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+ 
+    
+}
+
+aside {
+    float: left;
+    width: 25%;
+    height:100%;
+    background: #556270;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: black 1px dotted;
+    position: fixed;
+    margin-top: -20px;
+    
+ 
+       
+}
+
+main{
+    margin-left: 25%;
+    width: 75%;
+    height:100%;
+    /*background-color:antiquewhite;*/
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px; 
+
+  
+    
+}
+
+
+form{
+    margin: 0px auto;
+    width: 70%;
+    text-align: right;
+    
+}
+
+form p{
+    text-align: left;
+    color: #444e59;
+    margin-left:0px;
+    
+}
+
+form p input{
+    float:right;
+    
+}
+
+input[type=text] {
+    
+    box-sizing: border-box;
+    border: none;
+    background-color: #556270;
+    color: white;
+    width: 60%;
+}
+
+input[type=number] {
+    
+    box-sizing: border-box;
+    border: none;
+    background-color: #556270;
+    color: white;
+    width: 60%;
+}
+
+
+select{
+    background-color: #556270;
+    color: white;
+    width: 60%;
+    float:right;   
+    
+}
+
+.tabMenu{
+    color: #444e59;
+}
+.head_text{
+    color:white;
+    font-weight: bold;
+    font-family: Merienda One;
+}
+.button{
+    background-color: #444e59;
+    white-space: normal;
+    word-wrap: break-word;
+}
+}
+
+.button:hover{
+    color:#556270;
+    background-color: white;
+    font-size: 20px;
+}
+
+.box h2{
+    font-family: Book Antiqua;
+    font-size: 40px;
+     margin-top: 0;
+    font-family: Lemon;
+}
+
+.newItemLine{
+    box-sizing: border-box;
+    padding: 0;
+    list-style-type: none;
+      
+    margin: 0 auto;
+   
+}
+
+
+
+.itemPic{
+    width: 100%;
+    height: 100px;
+}
+
+.itemDescp{
+    font-family: Merienda One;
+    color: #556270;
+    width: 100%;
+    height: 100px;
+    
+}
+
+.itemOpt{
+
+    width: 100%;
+    height: 100px;
+}
+
+.textDes{
+    font-family: Merienda One;
+    color: #444e59;
+    font-size: 35px;
+
+}
+
+.box{
+    box-sizing: border-box;
+    
+    height: 80%;
+    width: 90%;
+    margin: 0 auto;
+    color: aliceblue;
+    font-family:Book Antiqua;
+    text-align: center;
+    background: rgba(78, 96, 93, 0.6);
+    -pie-background:  rgba(78, 96, 93, 0.6);
+    behavior: url(PIE.htc);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    min-height: 400px;
+  
+}
+
+/*Side bar menu ASIDE*/
+.list-group{
+    text-align: center;
+   
+    
+}
+
+.list-group a{
+     background-color: #556270;
+    border: #556270;
+    color: white;
+    
+}
+
+.list-group a:hover{
+    
+    font-size: 20px;
+}
+
+.list-group .active{
+ background-color: #444e59;  
+}
+
+.bio{float:right;}
+
+
+#logo{
+    font-family: Miltonian;
+    color:azure ;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.picParent {
+
+    width:150px;
+    height:150px;
+    border: 8px solid #444e59;
+}
+
+
+#greeting{
+    
+    text-align: center;
+    font-family: Merienda One; 
+    color:floralwhite;
+    font-size: 15px;
+}
+
+
+.button{
+    background-color: #444e59;
+    width:100%;
+    
+}
+
+
+.button:hover{
+    color:#556270;
+    background-color: white;
+}
+
+#adiadi{
+    display: none; 
+
+}
+
+.navbar-inverse{
+    
+   background-color: #444e59; 
+
+  
+}
+
+.decMenu{
+    color:white;
+}
+
+
+.navbar-brand {
+    color: white;
+}
+
+
+
+
+.navbar-fixed-top {
+  position: relative; 
+}
+
+#secPillTab{
+
+    float:left;
+    width:20%;
+    
+}
+
+#secCont{
+    
+   float:left;
+    width:80%;
+    
+    
+}
+
+/*Mobile $ Tablets settings*/
+@media only screen and (max-width: 600px) {
+    .picChild{
+        float:left;
+         width:100px;
+         height:90px;
+        margin-left:-15px;
+    }
+    .bio{
+    float:right;
+    }
+    
+    .picParent {
+
+    width:70%;
+    height:80%;
+    border: 6px solid #444e59;
+}
+    
+    
+    .list-group a{
+ font-size: 15px;  
+}
+    
+    #greeting{
+        font-size: 8px;
+    }
+    
+    .list-group a:hover{
+    
+    font-size: 14px;
+}
+
+    input[type=text] {
+    
+    
+    width: 100%;
+}
+
+input[type=number] {
+   
+    width: 100%;
+}
+    
+select{
+    
+    width:100%; 
+}
+    
+    #logo{
+    
+    font-size: 16px;
+}
+    
+
+    
+    aside{
+        display: none;
+        width:0%;
+        margin-top: -10px;
+    }
+    
+    main{
+        
+        width: 100%;
+        margin-left: 0;
+    }
+    #adiadi{
+    display: contents; 
+       
+        width:100%;
+        
+}
+    
+    .button{
+   font-size: 10px;
+        width: 100%;
+}
+    
+}
+
+

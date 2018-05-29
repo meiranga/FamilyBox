@@ -1,0 +1,300 @@
+/* The main page */
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Noto Serif', sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    font-family: 'Noto Serif';
+    
+}
+
+.howItWork{
+	border-radius:50%;
+	padding:30px ;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../img/family4.jpg');
+    min-height: 100%;
+}
+
+/* Second image (the team) */
+.bgimg-2 {
+    background-image: url("../img/family3.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("../img/family5.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/* the login modal box ---- for main page and register page*/
+#login{font-family:merianda-one;}
+
+#logform{
+    width:30%;
+}
+/* Full-width input fields */
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width:auto;
+    font-size:16px;
+    padding: 8px 16px;
+    background-color:#888;
+    color:white;
+}
+
+/* Center the image and position the close button */
+.contain {
+    padding: 16px;
+    margin-top:5%;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 6px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close{
+    position: absolute;
+    right: 25px;
+    top:0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+@media only screen and (max-device-width: 620px) {
+    .form-group input[type=email]{
+        margin-top:10%;
+    }
+    #signup{
+    }
+}
+        .login{
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            margin-right: -15px;
+            margin-top: -52px;
+            padding: 5px 5px;
+            width:auto;
+            border: none;
+            display: block;
+            outline:0;
+            }
+
+          /*.inlog{
+              font-family:lato;
+              padding:10px;
+              font-size:20px;
+              margin-top:40%;
+              width:100%;
+              color:black;
+             
+          }*/
+          
+          .goog{
+              margin-top:20%;
+              border-style:none;
+              width:auto;
+              width:60%;
+          }
+          .signb{
+              background-color:grey;
+              border-color:grey;
+              
+          }
+       
+          .joinT{
+              color:#58AC58;
+          }
+          .signbutton{
+              font-size:20px;
+              font-weight:bold;
+              margin-top:2%;
+              width:100%;
+              background-color:#58AC58;
+              border:none;
+              color:white;
+          }
+         
+          a:hover{
+              text-decoration:none;
+          }
+
+
+
+/*the register page*/
+        #logbox{
+        padding: 10px;
+        margin: 50px auto;
+        width: 60%;
+        background-color: #fff;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        text-align: left;
+        }
+        
+        #signup input[type=date],
+        #signup input[type=text],
+        #signup input[type=password],
+        #signup input[type=tel],
+        #signup input[type=email]{
+            width:80%;
+            height:40px;
+            font-family:lemone;
+            font-size:18px;
+            border:1px solid #ACC9FF;
+            text-align:center;
+        }
+                    .registerBack{
+                background-color:#ACC9FF;
+                background-size: cover;
+            }
+            #signup h1{
+                font-family:lemone;
+                word-spacing:1px;
+                margin:5%;
+            }
+            .fileR{
+                border:dotted #ACC9FF 2px;
+                
+            }
+            .legendR{
+                font-family:lemone;
+                font-size:20px;
+                color:grey;
+                padding:3%;
+                border:none;
+                text-align:center;
+            }
+            
+            #signMeUpB{
+                width:auto;
+                font-size:20px;
+                background-color:#ACC9FF;
+                color:white;
+                margin-top:3%;
+            }
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: center;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+.rule1{
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+ul {
+    display: inline-block;
+    text-decoration: none;
+    width:100%;
+}
+li{
+    display: inline-block;
+    text-decoration: none;
+}

@@ -1,0 +1,532 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family:fantasy;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+p{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
+/* First image */
+.bgimg-1 {
+    background-image: url('../img/frog.jpg');
+    min-height: 100%;
+}
+
+/* Second image */
+.bgimg-2 {
+    background-image: url('../img/bee.jpg');
+    min-height: 100%;
+}
+
+/* Third image*/
+.bgimg-3 {
+    background-image: url('../img/zo.jpg');
+    min-height: 100%;
+}
+
+.bgimg-4{
+	background-image: url('../img/funny.jpg');
+	min-height: 100%;
+	opacity:0.9;
+}
+
+/*main page*/
+.bgimg-5{
+	background-image: url('../img/family3.jpg');
+	min-height: 100%;
+}
+
+.bgimg-6{
+	background-image: url('../img/family5.jpg');
+	min-height: 100%;
+}
+
+.box1{
+	width:200px;
+	height: 200px;
+	
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+
+}
+
+
+
+.clear{
+	clear: both;	
+}
+
+a{
+	text-decoration:none;
+	
+}
+
+.present{
+	width: 200px;
+	height:200px;
+	float: left;
+	border-style:solid;
+	border-color: grey;
+	margin: 10px;
+}
+
+.shop{
+	background-color: white;
+	font-family: lemone;
+	font-size: 30px;
+}
+
+.headline{
+	color:white;
+	font-weight: bold;
+	font-family: merienda one;
+}
+
+.button {
+    background-color:#FFF3B2;
+    border: none;
+	color: #000000d1;
+    text-align:center;
+    text-decoration: none;
+    float:left;
+    font-size: 14px;
+    margin: 12px 6px;
+    cursor: pointer;
+	border-radius: 50%;
+	width: 85px;
+	height: 85px;
+	font-family:Merienda One;
+}
+
+
+.button:hover{
+	background-color:white;
+	font-size: 16px;
+
+}
+
+
+.active{
+	background-color:#E5DAA0;
+}
+
+#score{
+	font-size: 30px;
+	color:gold;
+	font-weight:bold;
+	text-align:center;
+	margin-top:10%;
+	display:none;
+}
+.pig{
+    width:70%;
+}
+    
+    .button:hover .pig{
+        display:none;
+    }
+    .button:hover #score{
+        display:block;
+    }
+
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.lastButton{
+	position:relative;
+	background-color:black;
+	color: white;
+	width: 150px;
+	border-radius:15px;
+	margin-top: 100px;
+	
+}
+
+
+
+/*the "to do" page*/
+		.loginpic{
+		    width:85px;
+		    height:85px;
+		    border-radius:50%;
+		    border:dotted #b0d7ea 3px ;
+		    margin: -60px -30px -100px 0px;
+
+		}
+		
+		.hello{
+		    float:right;
+		    margin-right:5%;
+		    color:black;
+		}
+		.hello_text{
+		    float:left;
+            font-size:20px;
+		    font-weight:bold;
+		    margin-top:3%;
+		}
+	
+	
+	.task{
+		/*background-color:#FFF3B2;
+		margin:1%;
+		color:black;
+		font-family:merienda one;
+		font-size:18px;
+		text-align:center;
+		width:25%;
+		float:left;*/
+		
+		background-color: #504d43;
+        margin:4% 2% 5% 2%;
+        color: #fdf5e6;
+        font-family: merienda one;
+        text-align: center;
+        width: 21%;
+        float: left;
+        border: inset;
+	}
+
+
+	.go{
+		text-align:center;
+		font-weight:bold;
+		width:50%;
+		height:40px;
+		padding:5px;
+		font-size:18px;
+		border-style:none;
+		font-family:fantasy;
+		margin:3%;
+	}
+	
+	.start{
+	  	background-color:#4CAF50;
+	  	color:white;
+
+	}
+	.finish{
+	    background-color:gold;
+	    color:black;
+
+	    
+	}
+	
+    #close{
+        margin-top:15%;
+    }
+	
+	.go:hover{
+		cursor: pointer;
+		font-size:20px;
+	}
+	
+	
+	
+	/* the shop page*/
+		.gift{
+		border-style:solid;
+		border-color:#70726C;
+		background-color:#E2E2E1;
+		margin:10px;
+		margin-left: 47px;
+		font-family:fantasy;
+		font-size:20px;
+		text-align:center;
+		width:20%;
+		float:left;
+		border-radius:10px;
+		min-height:400px;
+	}
+	
+	.giftLogo{
+		width:100px;
+		height:100px;
+		margin:10px;
+	}
+	
+
+	.points{
+		margin-top:-10px;
+	}
+	
+	.buy{
+		background-color:black;
+		color:white;
+		width:120px;
+		margin:10px;
+		border-style:none;
+		border-radius:10%;
+		font-family:fantasy;
+		font-size:25px;
+	}
+	.buy:hover{
+		background-color:yellow;
+		color:black;
+		cursor:pointer;
+	}
+	
+	
+	/*the family page*/		
+	.wrapper{
+		background-color:white;
+		width:100%;
+		height:100%;
+	}
+		
+	.circ{
+		border-radius:50%;
+		width:80px;
+		height:80px;
+		margin:6px;
+	} 
+	
+	.me{
+		border-width:5px;
+		border-style:solid;
+		border-color:lightgrey;
+
+	}
+	
+	.parents{
+		border-width:5px;
+		border-style:solid;
+		border-color:#D9D9D9;
+
+	}
+	.male{
+	    border-width:5px;
+	    border-style:solid;
+		border-color:#90C7FF;
+	}
+	.female{
+	    border-width:5px;
+	    border-style:solid;
+		border-color:#FF90C7;
+	}
+    .p{
+        margin-left:20%;
+        float:left;
+        text-align:center;
+    }
+
+	.f{
+		float:left;
+		text-align:center;
+		margin:30px;
+	}
+	
+	.Mbox{
+		background-color:rgba(217,217,217,0.9);
+		font-family:merienda one;
+		float:left;
+		margin:30px;
+		color:black;
+		min-height:500px;
+	}
+	
+	.box{
+		background-color:/*rgba(217,217,217,0.9)*/;
+		color:black;
+		font-family:merienda one;
+        float:left;
+		margin:30px;
+		margin-left:10%;
+		min-height:950px;
+		
+	}
+	
+	.Pbox{
+		float:left;
+		width:100%;
+		border-color:none;
+	}
+	.Bbox{
+	    width:100%;
+	    float:left;
+	}
+
+
+/*the Task page*/
+	#task_pic{
+		 width:20%;
+		 height:20%;
+		 margin:2%;
+		 
+	}
+
+
+/*the task-kid page*/
+    .task_form{
+        width:50%;
+        padding-top:0%;
+    }
+	#task_fieldset{
+	    border:double #4f6982 6px;
+		color:black;
+		font-size:25px;
+		font-weight:bold;
+		font-family:fantasy;
+		padding:3%;
+		background-color:rgba(250,250,250, 0.6);
+	}
+	
+	#task_legend{
+		padding-left: 5px;
+		padding-right: 5px;
+		color:#344144;
+		font-size:40px;
+		font-family:fantasy;
+		text-shadow:2px 2px 8px white;
+	}
+	
+    #send_B{
+        background-color: #43a7f4;
+        color: #d6effe;
+    }
+
+    #send_B:hover{
+        cursor: pointer;
+        background-color:lightgrey;
+        color:#4f6982;
+    }
+    
+
+    label > input{ /* HIDE RADIO */
+        visibility: hidden; /* Makes input not-clickable */
+        position: absolute; /* Remove input from document flow */
+    }
+    
+    label > input + img{ /* IMAGE STYLES */
+        cursor:pointer;
+        border:2px solid transparent;
+    }
+    
+    label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+        border:2px solid #43a7f4;
+    }
+
+
+@media only screen and (max-width: 820px){
+	.button {
+		width:65px;
+		height:65px;
+		background-color:#e0f9ac;
+		color: black;
+		font-size:12px;
+		float:left;
+		margin:1%;
+
+	}
+	.button:hover{
+		font-size:14px;
+	}
+	.active{
+		background-color:#c5d6a0;
+		
+	}
+
+	.bigpig{
+		display:none;
+	}
+	
+	#score{
+	    font-size:18px;
+	    margin:25% -10%;
+	}
+	
+	.loginpic{
+	    display:none;
+	}
+	.hello{
+	    float:right;
+	    margin-right:41%;
+	    margin-top:4%;
+	}
+	#helloTK{
+	    float: none;
+	    margin-left:85%;
+	    margin-bottom:-2%;
+	
+	}
+	
+	.gift, .task {
+		width:90%;
+		margin-left:20px;
+
+	}
+	.go{
+	    
+	    
+	}
+
+	.heart{
+		display: none;
+	}
+	.Mbox{
+		margin-left:70px;
+	}
+	
+	.box{
+		margin-right:70px;
+	}
+	
+	/*fieldset{
+		margin:150px 100px 100px 40px;
+		width: 300px;
+		height: 400px;
+	}*/
+	
+	#task_fieldset{
+	    width: 80%;
+        margin: 41% -35%;
+        font-size: 10px;
+	}
+
+}
+
